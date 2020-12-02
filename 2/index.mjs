@@ -14,13 +14,13 @@ let foundOne = 0, foundTwo = 0;
 
 for (const pass of input) {
     const sps = pass.split(' ');
-    const c = sps[0].split('-')
+    const c = sps[0].split('-');
     parsed.push([
         Number(c[0]),
         Number(c[1]),
         sps[1].substring(0, 1),
         sps[2]
-    ])
+    ]);
 }
 
 for (const [min, max, char, pass] of parsed) {
